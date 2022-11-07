@@ -1,4 +1,4 @@
-package ATM_Problem;
+package problems;
 
 import java.util.Scanner;
 
