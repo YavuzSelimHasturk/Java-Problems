@@ -2,7 +2,7 @@ package sorular;
 
 import java.util.Arrays;
 
-public class C03_ToplamiYeniArrayAtama {
+public class C04_ToplamiYeniArrayAtama {
     public static void main(String[] args) {
         /*
     Asagidaki array'in ic Array'lerindeki tum elemanlarin toplamini birer birer bulan ve
