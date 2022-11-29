@@ -3,7 +3,7 @@ package sorular;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class MapSoru {
+public class C09_MapSoru {
     public static void main(String[] args) {
 
     /*
