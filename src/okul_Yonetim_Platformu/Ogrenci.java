@@ -1,14 +1,8 @@
 package okul_Yonetim_Platformu;
 
 public class Ogrenci extends Kisi{
-
     private String sinif;
     private int ogrNo;
-
-    public Ogrenci(String sinif, int ogrNo) {
-        this.sinif = sinif;
-        this.ogrNo = ogrNo;
-    }
 
     public Ogrenci() {
     }
@@ -35,11 +29,12 @@ public class Ogrenci extends Kisi{
         this.ogrNo = ogrNo;
     }
 
+
+
     @Override
     public String toString() {
-        return "Ogrenci{" +
-                "sinif='" + sinif + '\'' +
-                ", ogrNo=" + ogrNo +
-                '}';
+        return super.toString() +
+                ", sinif='" + sinif + '\'' +
+                ", ogrNo=" + ogrNo ;
     }
 }

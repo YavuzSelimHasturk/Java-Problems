@@ -6,7 +6,6 @@ public class Kisi {
     private String tcNo;
     private int yas;
 
-
     public Kisi() {
     }
 
@@ -15,14 +14,6 @@ public class Kisi {
         this.soyIsim = soyIsim;
         this.tcNo = tcNo;
         this.yas = yas;
-    }
-
-    public String getTcNo() {
-        return tcNo;
-    }
-
-    public void setTcNo(String tcNo) {
-        this.tcNo = tcNo;
     }
 
     public String getIsim() {
@@ -41,6 +32,14 @@ public class Kisi {
         this.soyIsim = soyIsim;
     }
 
+    public String getTcNo() {
+        return tcNo;
+    }
+
+    public void setTcNo(String tcNo) {
+        this.tcNo = tcNo;
+    }
+
     public int getYas() {
         return yas;
     }
@@ -51,10 +50,10 @@ public class Kisi {
 
     @Override
     public String toString() {
-        return "Kisi{" +
+        return
                 "isim='" + isim + '\'' +
-                ", soyIsim='" + soyIsim + '\'' +
-                ", yas=" + yas +
-                '}';
+                        ", soyIsim='" + soyIsim + '\'' +
+                        ", tcNo='" + tcNo + '\'' +
+                        ", yas=" + yas ;
     }
 }

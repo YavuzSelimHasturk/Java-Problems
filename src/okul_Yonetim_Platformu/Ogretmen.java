@@ -1,17 +1,16 @@
 package okul_Yonetim_Platformu;
 
 public class Ogretmen extends Kisi{
-
     private String bolum;
     private int sicilNo;
 
-     public Ogretmen(String isim, String soyIsim, String tcNo, int yas, String bolum, int sicilNo) {
+    public Ogretmen() {
+    }
+
+    public Ogretmen(String isim, String soyIsim, String tcNo, int yas, String bolum, int sicilNo) {
         super(isim, soyIsim, tcNo, yas);
         this.bolum = bolum;
         this.sicilNo = sicilNo;
-    }
-
-    public Ogretmen() {
     }
 
     public String getBolum() {
@@ -32,9 +31,8 @@ public class Ogretmen extends Kisi{
 
     @Override
     public String toString() {
-        return "Ogretmen{" +
+        return super.toString() +
                 "bolum='" + bolum + '\'' +
-                ", sicilNo=" + sicilNo +
-                '}';
+                ", sicilNo=" + sicilNo ;
     }
 }
