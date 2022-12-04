@@ -3,6 +3,14 @@ package problems.ManavSorusu;
 import java.util.Scanner;
 
 public class Manav {
+    /*
+    Basit bir 5 ürünlü manav alisveris programi yaziniz.
+
+ * 1. Adim : urun listesinden urun sectir ve kac kilo oldugunu sor.
+ * 2. Adim : Baska bir urun almak isteyip istemedigini sor. istemiyorsa toplam miktari
+             goster, istiyorsa tekrar urun sectir. Bu islemi alisverisi bitirmek isteyene kadar devam ettir
+
+     */
     public static void main(String[] args) {
 
         System.out.println("Manavda mevcut urunler : \n" +Urunler.urunMap());
