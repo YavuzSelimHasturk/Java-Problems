@@ -27,7 +27,7 @@ public class C09_MapSoru {
             cumle.replace(each,cumle.get(each)+1);
         }
     }
-        System.out.println(cumle);
+        System.out.println(cumle);//{Ali=1, Ayse=1, Hasan=1, and=2, came=2, didn't=1, go=1, school=3, to=3}
 
     }
 }
