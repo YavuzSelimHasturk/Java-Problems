@@ -49,4 +49,7 @@ public class Kitap {
 
         return kitaplar;
     }
+
+    public static class Kitapci_Map {
+    }
 }
