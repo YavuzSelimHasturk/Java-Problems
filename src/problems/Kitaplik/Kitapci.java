@@ -21,18 +21,16 @@ public class Kitapci {
 			4: Bitir
  */
     static List<Kitap> kitaplar=new ArrayList<>();
-    static int kitapNo;
+    static int kitapNo=1000;
     static Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
-        System.out.println("Kutuphanede mevcut Kitaplar : " + Kitap.kitaplar(kitaplar));
+        System.out.println("Kutuphanede mevcut Kitaplar : " + kitaplar(kitaplar));
         System.out.println("");
-        try {
-            anaMenu(kitaplar);
-        } catch (Exception e) {
 
-        }
+        anaMenu(kitaplar);
+
     }
 
     private static void anaMenu(List<Kitap> kitaplar) {
@@ -60,8 +58,7 @@ public class Kitapci {
                 break;
             }
             case 4 :{
-                cikis();
-                break;
+                System.exit(0);
             }
             default:
                 System.out.println("Hatali giris yaptiniz. Lutfen tekrar deneyiniz");
@@ -79,7 +76,7 @@ public class Kitapci {
         if (cevap.equalsIgnoreCase("e")){
             anaMenu(kitaplar);
         } else if (cevap.equalsIgnoreCase("h")) {
-            cikis();
+            System.exit(0);
         }else {
             try {
                 System.out.println("Hatali giris yaptiniz.");
@@ -88,9 +85,7 @@ public class Kitapci {
             anaMenu(kitaplar);
         }
     }
-    private static void cikis() {
-        System.out.println("Tesekkur ederiz. Yine bekleriz... ");
-    }
+
     private static void numaraIleKitapSil(List<Kitap> kitaplar) {
         System.out.println("Silinecek kitap no giriniz : ");
         int silinicekNo= scan.nextInt();
@@ -125,6 +120,28 @@ public class Kitapci {
         kitaplar.add(kitap);
         System.out.println(kitap + " bilgilerine sahip kitap listeye eklendi.");
         anaMenu(kitaplar);
+    }
+    public static List<Kitap> kitaplar(List<Kitap> kitaplar)  {
+
+
+        Kitap kitap1= new Kitap(kitapNo++,"Savas ve Baris" , "Tolstoy" , "Is bankasi", 2017,150);
+
+        Kitap kitap2= new Kitap(kitapNo++,"Germinal", "Emile Zola", "Is Bankasi", 2018, 90);
+
+        Kitap kitap3= new Kitap(kitapNo++, "Suc ve Ceza", "Dostoyevski", "Is Bankasi", 2020, 135);
+
+        Kitap kitap4= new Kitap(kitapNo++, "Masumiyet Muzesi", "Orhan Pamuk", "Yapi Kredi Yayinlari", 2016, 100 );
+
+        Kitap kitap5= new Kitap(kitapNo++, "Ince Memed", "Yasar Kemal", "Yapi Kredi Yayinlari", 2018,250);
+
+        kitaplar.add(kitap1);
+        kitaplar.add(kitap2);
+        kitaplar.add(kitap3);
+        kitaplar.add(kitap4);
+        kitaplar.add(kitap5);
+
+
+        return kitaplar;
     }
 
 }
